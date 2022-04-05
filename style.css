@@ -1,0 +1,365 @@
+/**
+ * projekt: Webdokumentar
+ **/
+
+ /* Google fonts */
+ /*Fredericka the great*/
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+
+ /* Variabler*/
+ :root {
+   /* farver */
+   --white: #fcfcfc;
+   --offwhite: #FFFEF2;
+   --beige: #ece2d7;
+   --green:  #7faf8c;
+   --pink: #F4D1E4;
+   --black: #1d0b09;
+
+   --tekstur1: url('../images/tekstur1.png');
+
+   /* fonte */
+   --overskrift: 'Fredericka the Great', sans-serif; /* overskrifter */
+   --broedtekst: 'Libre Baskerville', serif; /* brødtekst */
+
+   /* whitespace */
+   --whitespace: .3rem;
+
+   /* teksturer ("skitse baggrund") */
+   --baggrund: url('../images/baggrund.png');
+ }
+
+ /* Smooth scroll */
+ html {
+   overflow-x: hidden;
+   margin: 0;
+   border: none;
+ }
+
+
+  /* Typography */
+  h1 {
+    font-family: var(--overskrift);
+    color:  #7faf8c;
+    margin-top: 80px;
+    text-align: center;
+  }
+
+  h2{
+    font-family: var(--broedtekst);
+    color: #1d0b09;
+    background-color: #7faf8c;
+    font-weight: 200;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  h3 {
+    font-family: var(--broedtekst);
+    color:  #7faf8c;
+    text-align: center;
+  }
+
+  p {
+    color: #ffff;
+    background-color: #7faf8c;
+  }
+
+  *,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  background-color: var(--offwhite);
+  padding: 0;
+  overflow-x: hidden;
+}
+
+
+/* baggrund*/
+body {
+  background-color: var(--offwhite);
+  font-weight: 300;
+  font-size: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.forsideGif {
+  width: 100%;
+}
+
+.forsideGif img {
+  width: 100%;
+  height: 730px;
+}
+a:link{
+  text-decoration: none!important;
+}
+
+#knapper {
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  padding-top: 0;
+  margin: 5%;
+  margin-bottom: 0;
+  width: 100%;
+  margin-top: 0;
+  background-image: var(--tekstur1);
+  background-repeat: no-repeat;
+  background-size: 30%;
+  text-decoration: none;
+  background-position-x: 120px;
+  overflow-y: hidden;
+}
+
+#knapper h2 {
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.knap1 {
+  padding: 5%;
+  margin-left: 10%;
+  width: 33.3%;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+
+.knap2 {
+  padding: 5%;
+  padding-top: 200px;
+  width: 33.3%;
+  background-color: transparent;
+}
+
+.knap3 {
+  padding: 5%;
+  margin-right: 10%;
+  width: 33.3%;
+  background-color: transparent;
+}
+
+  /* Knapper style */
+  .button-5{
+    letter-spacing: 1px;
+    outline: 0;
+    border: 1px solid black;
+    cursor: pointer;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    display: inline-flex;
+}
+
+
+
+  .button-5:after {
+    content: "";
+    background-color: #7faf8c;
+    width: 400px;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    top: 7px;
+    left: 7px;
+    transition: 0.2s;
+  }
+
+  .button-5:hover:after {
+    top: 0px;
+    left: 0px;
+  }
+  
+  .katsFrem {
+    height: 100px;
+  }
+
+
+  @media (min-width: 768px) {
+    .button-5 {
+      padding: 13px 50px 13px;
+    }
+  }
+
+/* main */
+
+  /* Videoer */
+  #hverdagvideo {
+    padding-left: 19%;
+    padding-right: 10%;
+    padding-top: 4.5%;
+    padding-bottom: 2%;
+  }
+
+  .fremtid {
+    display: flex;
+    margin-top: -20px;
+    margin-left: 100px;
+    background-image: var(--tekstur1);
+    background-repeat: no-repeat;
+    background-size: 35%;
+    background-position-x: 800px;
+    background-position-y: 320px;
+  }
+  
+  .kolonne {
+    flex: 33.33%;
+    align-items: center;
+    background-color: transparent;
+  }
+
+  .kolonne img {
+    margin-top: -60px;
+  }
+  
+  #forvirret img {
+    width: 550px;
+  }
+
+  #forvirret {
+    margin-top: 60px;
+  }
+
+  .kolonne h3 {
+    font-size: 22px;
+    text-align: justify;
+    width: 500px;
+    padding: 75px;
+    background-color: transparent;
+    margin-top: 20px;
+  }
+
+  .play {
+    color: var(--black);
+    letter-spacing: 1px;
+    padding: 13px 20px 13px;
+    outline: 0;
+    border: 1px solid black;
+    border-radius: 60px;
+    width: 85px;
+    height: 85px;
+    cursor: pointer;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    display: block;
+    margin-left: 100px;
+    margin-top: -10px;
+    overflow-y: hidden;
+  }
+
+  .play::after {
+    content: "";
+    background-color: #7faf8c;
+    width: 105px;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    top: 7px;
+    left: 7px;
+    transition: 0.2s;
+    border-radius: 100px;
+  }
+
+  .play img {
+    width: 60px;
+    background-color: transparent;
+    padding-top: 60px;
+  }
+
+  .play a {
+    background-color: transparent;
+  }
+
+  #fortidvideo {
+    width: 70%;
+    margin-left: 100px;
+  }
+ 
+
+  /* faq video */
+  #videoSelect{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+  #bundknap {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2%;
+    margin: 5%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+  }
+
+  #bundknap h2 {
+    font-size: 1rem;
+  }
+
+  #bundGif {
+    justify-content: center;
+    width: 60%;
+    padding-top: 5%;
+  }
+
+
+  .button8 {
+    padding: 5%;
+    width: 380px;
+    height: 40px;
+    border: none;
+    background-color: #7faf8c;
+    z-index: 1;
+    overflow-y: hidden;
+  }
+
+  .bk {
+    width: 390px;
+    height: 50px;
+    background-color: transparent;
+    border: 1px solid black;
+    z-index: 0;
+  }
+
+  .button8:hover{
+    padding: 5%;
+    width: 390px;
+    height: 50px;
+    border: none;
+    background-color: #7faf8c;
+    z-index: 0;
+    transition: 0.2s;
+  }
+
+  #fjern {
+  }
+
+/* footer */
+
+ footer {
+   background-color: #7faf8c;
+   color: #ffff;
+   text-align: center;
+   min-height: 200px;
+   padding-top: 35px;
+   padding-bottom: 35px;
+   width: 100%;
+   font-family: var(--broedtekst);
+   line-height: 1.6;
+ }

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Kat's Univers</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="author" content="#">
+  <meta name="keywords" content="erhvervsakademiet, aarhus, uddannnelse, multimediedesigner">
+	<meta name="description" content="#">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- favicon = ikon i faneblad / browser -->
+	<link rel="icon" type="image/x-icon" href="#" />
+</head>
+
+<body>
+
+  <div class="forsideGif">
+    <IMG SRC="images/walkiekatie.gif">
+  </div>
+
+  <!-- Knapper på siden !-->
+
+  <section id="knapper">
+    <div class="knap1">
+      <a href="#klikHistorie">
+        <button class="button-5" role="button"><h2>KATS HISTORIE</h2></button>
+      </a>
+    </div>
+
+    <div class="knap2">
+      <a href="#forvirret">
+      <button class="button-5" role="button"><h2>KATS <br> DRØMME</h2></button>
+    </a>
+    </div>
+
+    <div class="knap3">
+      <a href="#hverdagvideo">
+      <button class="button-5" role="button"><h2>KATS HVERDAG</h2></button>
+    </a>
+    </div>
+
+  </section>
+
+<!-- Video: Kats hverdag-->
+<h1>KATS HVERDAG</h1>
+<video width="90%" height="auto" id="hverdagvideo" controls>
+  <source src="images/hverdagvideo.mp4" type="video/mp4">
+</video>
+
+<div class="katsFrem">
+  <h1 id="forvirret">KATS FREMTIDSDRØMME</h1>
+</div>
+
+
+
+<section>
+  <div class="fremtid">
+
+    <div class="kolonne" id="forvirret">
+      <img src="images/forvirret.gif" alt="">
+    </div>
+
+    <div class="kolonne">
+      <h3>
+            Det fede ved min uddannelse som multimediedesigner, er at det er en bred uddannelse. Den giver mig mulighed for at drømme stort, og det er kun fantasien og modet der sætter grænser for, hvad der kan ende med at blive min fremtidige arbejdsplads. <br>
+            <br> Hør mere om mine drømme her:
+            </h3>
+            <div class="play">
+              <audio id="minAudio" src="FREMTID.mp3" preload="auto"></audio>
+              <a onClick="togglePlay()"><img src="images/play.png" alt=""></a>
+          </div>
+    </div>
+
+
+  </div>
+</section>
+
+
+<h1>KATS VEJ TIL ERHVERVSAKADEMIET</h1>
+<video width="100%" height="100%" id="fortidvideo">
+  <source src="images/kortvid.mp4" type="video/mp4">
+</video>
+
+<h1>FAQ</h1>
+
+
+<div id="videoSelect">
+<!--knapper til faq-->
+
+
+<section id="bundknap">
+<div class="bk">
+<button class="button8" data-src="images/faq.mp4" type="video/mp4" role="button"><h2>Hvordan var din studiestart?</h2></button>
+</div>
+
+<br>
+
+<div class="bk">
+<button class="button8" data-src="images/letbanen1.mp4" type="video/mp4" role="button"><h2>Er der gode transportmuligheder?</h2></button>
+</div>
+
+<br>
+
+<div class="bk">
+<button class="button8" role="button"><h2>Hvilke arrangementer er der på skolen?</h2></button>
+</div>
+
+<br>
+
+<div class="bk">
+<button class="button8" role="button"><h2>Hvordan er det sociale?</h2></button>
+</div>
+
+<br>
+
+<div class="bk">
+<button class="button8" data-src="images/tjener.mp4" type="video/mp4" role="button"><h2>Er der tid til et studiejob?</h2></button>
+</div>
+
+</section>
+
+
+<section id="bundGif">
+<img src="images/pausehihi.gif" width="100%" alt="">
+</section>
+</div>
+
+<video id="player"></video>
+
+<footer>
+  <div id="footerInfo"></div>
+</footer>
+
+<script src="js/knap.js"></script>
+<script src="js/js.js"></script>
+
+
+  </body>
+</html>
